@@ -1,0 +1,27 @@
+.footer {
+    display: flex;
+    height: 120px;
+    align-items: center;
+
+    &__content {
+        display: flex;
+        gap: 24px;
+        justify-content: end;
+    }
+
+    &__link {
+        position: relative;
+        display: block;
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        border: 1px solid $color-white-light;;
+    }
+
+    &__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

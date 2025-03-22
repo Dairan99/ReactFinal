@@ -1,0 +1,12 @@
+.btn {
+    font-size: 18px;
+    line-height: 24px;
+    color: $color-white;
+    max-height: 56px;
+    height: 100%;
+    cursor: pointer;
+
+    @include vp-767 {
+        height: 56px;
+    }
+}

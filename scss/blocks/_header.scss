@@ -1,0 +1,200 @@
+.header {
+    position: relative;
+    margin: 0 0 32px 0;
+    
+    &__content {
+        display: flex;
+        padding: 24px 0;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 80px 0 0;
+
+        @media (max-width:1200px) {
+            padding: 0 50px 0 0;
+        }
+
+        @include vp-767 {
+            gap: 6px;
+        }
+    }
+
+    &__icon {
+        @include vp-767 {
+            display: none;
+        }
+    }
+
+    &__icon-small {
+        display: none;
+
+        @include vp-767 {
+            display: block;
+        }
+    }
+
+    &__logo-name {
+        letter-spacing: 1px;
+        font-weight: 400;
+        font-size: 22px;
+        color: $color-white;
+
+        @include vp-767 {
+            font-size: 18px;
+        }
+    }
+
+    &__enter {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        line-height: 46px;
+        font-weight: 400;
+        color: $color-white;
+        cursor: pointer;
+
+        @media (max-width:1200px) {
+            font-size: 20px;
+        }
+
+        @include vp-767 {
+            display: none;   
+        }
+
+        &:hover {
+            border-bottom: 1.5px solid $color-heliotrope;
+        }
+    }
+
+    &__account {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        line-height: 46px;
+        font-weight: 400;
+        color: $color-white;
+        cursor: pointer;
+    }
+
+    &__account-active {
+        margin: 0;
+        padding: 0;
+        background: transparent;
+        border: none;
+        font-size: 24px;
+        line-height: 46px;
+        font-weight: 400;
+        color: $color-white;
+        cursor: pointer;
+        border-bottom: 1.5px solid transparent;
+        border-bottom: 1.5px solid $color-heliotrope;
+    }
+
+    &__search-list {
+        position: absolute;
+        left: 680px;
+        padding: 0;
+        list-style-type: none;
+        margin: 0;
+        background: $color-montana;
+        border-radius: 8px;
+        width: 559px;
+        height: 476px;
+        top: 84px;
+        z-index: 10;
+
+        @include vp-1440 {
+            left: 637px;
+        }
+    }
+
+    &__search-item {
+        display: flex;
+        gap: 12px;
+        padding: 20px 8px;
+    }
+
+    &__search-img {
+        width: 40px;
+        height: 52px;
+    }
+
+    &__search-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__search-info {
+        display: flex;
+        gap: 12px;
+    }
+
+    &__search-rating {
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 47px;
+        height: 20px;
+        border-radius: 16px;
+        background: $color-forest-green;
+    }
+
+    &__icon-star {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+        margin: 0 4px 0 0;
+    }
+
+    &__search-count {
+        font-size: 12px;
+        line-height: 16px;
+        font-weight: 700;
+        padding: 2px 8px 2px 22px;
+        color: $color-white;
+    }
+
+    &__search-year,
+    &__search-genres,
+    &__search-time {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: $color-white-grey;
+    }
+
+    &__search-title {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        color: $color-white;
+        margin: 0;
+    }
+
+    &__form {
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: $color-black-opacity;
+    }
+}

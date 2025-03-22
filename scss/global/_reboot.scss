@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-forest-green: #{$color-forest-green};
+  --color-lucky:#{$color-lucky};
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: $ff-play;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color-bokara-grey;
+  background: linear-gradient(to bottom, $color-black, $color-nero), 
+  linear-gradient(to bottom, $color-dodger-blue, $color-blue-zodiac);
+  background-blend-mode: overlay; 
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: $ff-play;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  color: $color-bokara-grey;
+  text-decoration: none;
+}
+
+// background-color: linear-gradient(to right, $color-black, $color-nero), 
+//   linear-gradient(to bottom, $color-dodger-blue, $color-blue-zodiac);

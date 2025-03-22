@@ -1,0 +1,46 @@
+.genres {
+    display: grid;
+
+    &__title {
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 700;
+        margin: 0 0 64px 0;
+        color: $color-white;
+    }
+
+    &__list {
+        display: grid;
+        list-style-type: none;
+        grid-template-columns: repeat(4, 290px);
+        gap: 64px 40px;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        position: relative;
+        box-shadow: 0 0 80px $color-white-dark;
+        border-radius: 24px;
+        overflow: hidden;
+        background: $color-black;
+        height: 304px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__image {
+        max-width: 290px;
+        width: 100%;
+        max-height: 220px;
+        height: 100%;
+        margin: 0 0 23px;
+    }
+
+    &__name {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: $color-white;
+    }
+}

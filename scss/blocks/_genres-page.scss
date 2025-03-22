@@ -1,0 +1,59 @@
+.genre-page {
+    display: grid;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 700;
+        margin: 0 0 64px 0;
+        color: $color-white;
+    }
+
+    &__list {
+        display: grid;
+        list-style-type: none;
+        grid-template-columns: repeat(5, 224px);
+        gap: 64px 40px;
+        padding: 0;
+        margin: 0 0 64px 0;
+    }
+
+    &__item {
+        position: relative;
+        box-shadow: 0 0 80px $color-white-dark;
+        border-radius: 24px;
+        overflow: hidden;
+        background: $color-black;
+        height: 336px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    &__image {
+        max-width: 224px;
+        width: 100%;
+        max-height: 336px;
+        height: 100%;
+    }
+
+    &__button {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        margin: 0 auto;
+        padding: 16px 48px;
+        border-radius: 28px;
+        max-width: 218px;
+        width: 100%;
+        max-height: 56px;
+        height: 100%;
+        background-color: $color-cornflower-blue;
+        color: $color-white;
+        border: none;
+    }
+}

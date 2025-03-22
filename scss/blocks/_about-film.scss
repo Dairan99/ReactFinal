@@ -1,0 +1,304 @@
+.about-film {
+    display: block;
+    margin: 0 0 40px 0;
+
+    &__wrapper {
+        display: flex;
+
+        @include vp-767 {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__left {
+        display: flex;
+        max-width: 600px;
+        width: 100%;
+        flex-direction: column;
+        margin: 74px 0 0 0;
+
+        @include vp-767 {
+            margin: 24px 0 0 0;
+        }
+    }
+
+    &__right {
+        position: relative;
+        max-width: 680px;
+        width: 100%;
+    }
+
+    &__info {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        margin: 0 0 16px;
+    }
+
+    &__rating {
+        display: flex;
+        position: relative;
+        align-items: center;
+        width: 70px;
+        height: 32px;
+        border-radius: 16px;
+    }
+
+    &__icon-star {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    &__count {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        padding: 4px 12px 4px 32px;
+        color: $color-white;
+    }
+
+    &__year,
+    &__genre,
+    &__time {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $color-white-grey;
+
+        @include vp-767 {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 700;
+        color: $color-white;
+        margin: 0 0 16px;
+
+        @include vp-1440 {
+            font-size: 40px;
+        }
+
+        @include vp-767 {
+            font-size: 24px;
+            line-height: 32px;
+            margin: 0 0 12px;
+        }
+    }
+
+    &__description {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 400;
+        color: $color-white-grey;
+        margin: 0 0 60px;
+
+        @include vp-1440 {
+            font-size: 20px;
+        }
+
+        @include vp-767 {
+            font-size: 18px;
+            line-height: 24px;
+            margin: 0 0 32px;
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 16px;
+        max-width: 538px;
+        width: 100%;
+
+        @media(max-width: 1100px)  {
+            flex-direction: column;
+            gap: 12px;
+        }
+    }
+
+    &__button-wrapper {
+        display: flex;
+        flex: 1;
+        gap: 16px;
+
+        @include vp-767 {
+            display: flex;
+            gap: 16px;;
+        }
+    }
+
+    &__button-trailer {
+        background: $color-cornflower-blue;
+        max-width: 171px;
+        width: 100%;
+        border-radius: 28px;
+        padding: 16px 48px;
+        max-width: 171px;
+        width: 100%;
+        border: none;
+
+        @include vp-1440 {
+            padding: 16px 20px;
+        }
+
+        @media(max-width: 1100px)  {
+            max-width: 100px;
+            padding: 16px 14px;
+        }
+
+        @include vp-767 {
+            max-width: 335px;
+        }
+
+        &:hover {
+            background: $color-east-bay;
+        }
+    }
+
+    &__button-description {
+        background: $color-montana;
+        max-width: 183px;
+        width: 100%;
+        border-radius: 28px;
+        padding: 16px 48px;
+        max-width: 183px;
+        width: 100%;
+        border: none;
+
+        @media(max-width: 1200px)  {
+            padding: 16px 20px;
+        }
+
+        @media(max-width: 1100px)  {
+            padding: 16px;
+        }
+
+        @include vp-767 {
+            padding: 16px 40px;
+            max-width: 167px;
+        }
+
+        &:hover {
+            background: $color-dim-gray;
+        }
+    }
+
+    &__button-favourites,
+    &__button-update {
+        position: relative;
+        max-width: 68px;
+        border-radius: 28px;
+        width: 100%;
+        background: $color-montana;
+        border: none;
+
+        @include vp-1440 {
+            max-width: 58px;
+        }
+
+        @include vp-767 {
+            max-width: 68px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__img {
+        max-width: 680px;
+        width: 100%;
+        max-height: 552px;
+        height: 100%;
+        border-radius: 16px;
+
+        @include vp-767 {
+            max-height: 350px;
+        }
+
+        @media(max-width:375px) {
+            max-height: 234px;
+        }
+    }
+
+    &__loader {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 32px;
+        line-height: 40px;
+        color: $color-white;
+    }
+
+    &__bottom-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    &__bottom-title {
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 700;
+        color: $color-white;
+        margin: 40px 0 0 0;
+    }
+
+    &__bottom-list {
+        display: flex;
+        width: 45%;
+        flex-direction: column;
+        gap: 24px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__bottom-item {
+        display: flex;
+        
+    } 
+
+    &__bottom-name {
+        display: flex;
+        flex: 1;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $color-white;
+
+        &::after {
+            content: '';
+            border-bottom: 1px dotted;
+            flex: 1;
+            margin: 0 .5em;
+        }
+    }
+
+    &__bottom-space {
+        flex: 1;
+        border-bottom: 1px dotted $color-white-grey;
+        margin-bottom: 3px;
+    }
+
+    &__bottom-space-two {
+        margin: 0 840px 0 0;
+    }
+
+    &__bottom-info {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $color-white;
+    }
+}

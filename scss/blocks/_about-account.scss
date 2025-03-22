@@ -1,0 +1,167 @@
+.about-account {
+    display: block;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+    }
+
+    &__title {
+        font-size: 48px;
+        line-height: 56px;
+        font-weight: 700;
+        color: $color-white;
+    }
+
+    &__tabs {
+        display: flex;
+        gap: 64px;
+    }
+
+    &__text {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 400;
+        color: $color-white;
+        padding: 8px 0;
+        margin: 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        border-bottom: 1.5px solid transparent;
+
+        &:hover {
+            border-bottom: 1.5px solid $color-heliotrope;
+        }
+    }
+
+    &__info-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    &__icon {
+        margin: 0 10px 0 0;
+        color: $color-white;
+    }
+
+    &__data {
+        display: flex;
+        gap: 16px;
+    }
+
+    &__icon-info {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        padding: 14px;
+        border-radius: 30px;
+        background: $color-white-opacity;
+    }
+
+    &__data-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__data-title {
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        color: $color-white;
+    }
+
+    &__data-name {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: $color-white;
+    }
+
+    &__initials {
+        position: relative;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        width: 60px;
+        height: 60px;
+        padding: 14px;
+        border-radius: 30px;
+        color: $color-white;
+        background: $color-white-opacity;
+    }
+
+    &__icon-email {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color: $color-white;
+    }
+
+    &__button {
+        max-width: 262px;
+        width: 100%;
+        height: 56px;
+        padding: 16px 48px;
+        border-radius: 28px;
+        background-color: $color-cornflower-blue;
+        border: none;
+    }
+
+    &__favorites {
+        display: grid;
+    }
+
+    &__favorites-list {
+        display: grid;
+        list-style-type: none;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 64px 40px;
+        padding: 0;
+    }
+
+    &__favorites-item {
+        position: relative;
+        box-shadow: 0 0 80px $color-white-dark;
+        overflow: visible;
+        border-radius: 16px;
+
+        &:hover {
+            .about-account__favorites-delete {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__favorites-image {
+        max-width: 224px;
+        width: 100%;
+        max-height: 336px;
+        height: 100%;
+        border-radius: 16px;
+    }
+
+    &__favorites-delete {
+        opacity: 0;
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+        border: none;
+        cursor: pointer;
+        transition: opacity 0.3s ease ;
+    }
+
+    &__icon-cross {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
