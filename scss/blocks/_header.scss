@@ -22,6 +22,10 @@
         @include vp-767 {
             gap: 6px;
         }
+
+        @media (max-width:500px) {
+            padding: 0 15px 0 0;
+        }
     }
 
     &__icon {

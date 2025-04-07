@@ -184,6 +184,10 @@
             max-width: 167px;
         }
 
+        @media(max-width: 375px)  {
+            padding: 13px;
+        }
+
         &:hover {
             background: $color-dim-gray;
         }
