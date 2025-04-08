@@ -59,14 +59,14 @@ export const LoginForm = ({ setAuthType }: ILoginForm) => {
                             <input className="auth-form__field" type="email" placeholder="Электронная почта" {...register("email")}></input>
                             {errors.email && <span style={{color:"red"}}>{errors.email.message}</span>}
                             <svg className='auth-form__icon' width='22' height='19'aria-hidden='true'>
-                                <use xlinkHref='/sprite.svg#icon-email'></use>
+                                <use xlinkHref='/ReactFinal/sprite.svg#icon-email'></use>
                             </svg>
                         </div>
                         <div className="auth-form__input">
                             <input className="auth-form__field" type="password" placeholder="Пароль" {...register("password")}></input>
                             {errors.password && <span style={{color:"red"}}>{errors.password.message}</span>}
                             <svg className='auth-form__icon' width='22' height='13'aria-hidden='true'>
-                                <use xlinkHref='/sprite.svg#icon-password'></use>
+                                <use xlinkHref='/ReactFinal/sprite.svg#icon-password'></use>
                             </svg>
                         </div>
                     </div>
