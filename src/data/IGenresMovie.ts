@@ -1,10 +1,10 @@
 export type GenresMovie = string
 
 export const imagesGenre:{[key:string]:string} = {
-    "history": "../../public/images/history.png",
-    "action": "../../public/images/action.png",
-    "adventure": "../../public/images/adventure.png",
-    "animation": "../../public/images/animation.png",
+    "history": "/ReactFinal/images/history.png",
+    "action": "/ReactFinal/public/images/action.png",
+    "adventure": "../ReactFinal/public/images/adventure.png",
+    "animation": "./ReactFinal/public/images/animation.png",
     "comedy": "../../public/images/comedy.png",
     "crime": "../../public/images/crime.png",
     "documentary": "../../public/images/documentary.png",
