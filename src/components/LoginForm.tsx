@@ -44,13 +44,13 @@ export const LoginForm = ({ setAuthType }: ILoginForm) => {
         })}>
                 <button className="auth-form__close" onClick={() => dispatch(closeAuthForm())}>
                     <svg className="auth-form__icon-cross" width="18" height="18" aria-hidden="true">
-                        <use xlinkHref="/public/sprite.svg#icon-cross-black"></use>
+                        <use xlinkHref="/ReactFinal/sprite.svg#icon-cross-black"></use>
                     </svg>
                 </button>
                 <div className="auth-form__content">
                     <div className="auth-form__logo">
                         <svg className='auth-form__icon-logo' width='24' height='32'aria-hidden='true'>
-                                <use xlinkHref='/public/sprite.svg#icon-logo'></use>
+                                <use xlinkHref='/ReactFinal/sprite.svg#icon-logo'></use>
                         </svg>
                         <span className="auth-form__logo-name">маруся</span>
                     </div>

@@ -52,7 +52,7 @@ const TrailerModal:FC<TrailerModalProps> = ({trailerUrl, title, onClose}) => {
                 {!isPaused &&
                     <button className="trailer__button-close" onClick={handleCloseButtonClick}>
                         <svg className="trailer__icon-cross" width="20" height="19" aria-hidden="true" >
-                            <use xlinkHref="/public/sprite.svg#icon-cross-black"></use>
+                            <use xlinkHref="/ReactFinal/sprite.svg#icon-cross-black"></use>
                         </svg>
                     </button>
                 }

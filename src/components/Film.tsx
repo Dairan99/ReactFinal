@@ -124,7 +124,7 @@ const Film = () => {
 						<div className='about-film__info'>
 							<div className="about-film__rating" style={{background:ratingColor}}>
 								<svg className='about-film__icon-star' width='16' height='16'>
-									<use xlinkHref='/public/sprite.svg#icon-star'></use>
+									<use xlinkHref='/ReactFinal/sprite.svg#icon-star'></use>
 								</svg>
 								<span className="about-film__count">{data.tmdbRating.toFixed(1)}</span>
 							</div>
@@ -157,7 +157,7 @@ const Film = () => {
 								</button>
 								<button className='about-film__button-update btn' onClick={handleClick}>
 									<svg className='about-film__icon' width='20' height='20'>
-										<use xlinkHref='/public/sprite.svg#icon-arrows'></use>
+										<use xlinkHref='/ReactFinal/sprite.svg#icon-arrows'></use>
 									</svg>
 								</button>
 							</div>

@@ -100,22 +100,22 @@ const Header = () => {
 						   <Link className={`main-nav__genre${activePage === "genres" ? '-active' : ''}`} to={"/genres"} onClick={() => handlePageChange("genres")}>Жанры</Link>
 						   <div className="main-nav__wrapper-mobile">
 						   	<svg className="main-nav__icon-genre" width="20" height="20" aria-hidden="true">
-								<use xlinkHref="/public/sprite.svg#icon-genre"></use>
+								<use xlinkHref="/ReactFinal/sprite.svg#icon-genre"></use>
 							</svg>
 							<svg className="main-nav__icon-search-mobile" width="21" height="21" aria-hidden="true">
-								<use xlinkHref="/public/sprite.svg#icon-search-mobile"></use>
+								<use xlinkHref="/ReactFinal/sprite.svg#icon-search-mobile"></use>
 							</svg>
 							<svg className="main-nav__icon-account" width="16" height="21" aria-hidden="true">
-								<use xlinkHref="/public/sprite.svg#icon-account"></use>
+								<use xlinkHref="/ReactFinal/sprite.svg#icon-account"></use>
 							</svg>
 						   </div>
 							<div className="main-nav__wrapper">
 								<input className="main-nav__search" placeholder="Поиск" value={searchMovie} onChange={handleInputChange}></input>
 								{searchMovie && (<svg className="main-nav__icon-cross" width="14" height="14" aria-hidden="true" onClick={handleInputReset}>
-									<use xlinkHref="/public/sprite.svg#icon-cross"></use>
+									<use xlinkHref="/ReactFinal/sprite.svg#icon-cross"></use>
 								</svg>)}
 								<svg className="main-nav__icon" width="24" height="24" aria-hidden="true">
-									<use xlinkHref="/public/sprite.svg#icon-search"></use>
+									<use xlinkHref="/ReactFinal/sprite.svg#icon-search"></use>
 								</svg>
 							</div>
 						</nav>
@@ -143,7 +143,7 @@ const Header = () => {
 								<div className="header__search-info">
 									<div className="header__search-rating" style={{background:ratingColor}}>
 										<svg className='header__icon-star' width='10' height='10'>
-											<use xlinkHref='/public/sprite.svg#icon-star-small'></use>
+											<use xlinkHref='/ReactFinal/sprite.svg#icon-star-small'></use>
 										</svg>
 										<span className="header__search-count">{movie.tmdbRating.toFixed(1)}</span>
 									</div>
