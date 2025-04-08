@@ -91,7 +91,7 @@ const Header = () => {
 							<use xlinkHref='/public/sprite.svg#icon-logo'></use>
 						</svg>
 						<svg className='header__icon-small' width='18' height='18'aria-hidden='true'>
-							<use xlinkHref='/public/sprite.svg#icon-logo-small'></use>
+							<use xlinkHref='public/sprite.svg#icon-logo-small'></use>
 						</svg>
 						 <Link className="header__logo-name" to={"/"}>маруся</Link>
 					</div>
@@ -100,7 +100,7 @@ const Header = () => {
 						   <Link className={`main-nav__genre${activePage === "genres" ? '-active' : ''}`} to={"/genres"} onClick={() => handlePageChange("genres")}>Жанры</Link>
 						   <div className="main-nav__wrapper-mobile">
 						   	<svg className="main-nav__icon-genre" width="20" height="20" aria-hidden="true">
-								<use xlinkHref="/public/sprite.svg#icon-genre"></use>
+								<use xlinkHref="/sprite.svg#icon-genre"></use>
 							</svg>
 							<svg className="main-nav__icon-search-mobile" width="21" height="21" aria-hidden="true">
 								<use xlinkHref="/public/sprite.svg#icon-search-mobile"></use>
