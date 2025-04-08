@@ -149,9 +149,9 @@ const Film = () => {
 								<button className='about-film__button-favourites btn' onClick={toggleFavorite}>
 									<svg className='about-film__icon'width='20' height='20'>
 										{isFavorited ?
-											(<use xlinkHref='/sprite.svg#icon-heart-purple'></use>)
+											(<use xlinkHref='ReactFinal/sprite.svg#icon-heart-purple'></use>)
 											:
-											(<use xlinkHref='/sprite.svg#icon-heart'></use>)
+											(<use xlinkHref='ReactFinal/sprite.svg#icon-heart'></use>)
 										}
 									</svg>
 								</button>
