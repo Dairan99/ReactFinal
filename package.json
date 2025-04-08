@@ -2,11 +2,11 @@
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Dairan99.github.io/ReactFinal/",
   "type": "module",
+  "homepage": "https://Dairan99.github.io/ReactFinal",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
