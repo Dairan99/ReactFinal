@@ -88,7 +88,7 @@ const Header = () => {
 				<div className="header__content">
 					<div className='header__wrapper'>
 						<svg className='header__icon' width='24' height='32'aria-hidden='true'>
-							<use xlinkHref='public/sprite.svg#icon-logo'></use>
+							<use xlinkHref='/sprite.svg#icon-logo'></use>
 						</svg>
 						<svg className='header__icon-small' width='18' height='18'aria-hidden='true'>
 							<use xlinkHref='public/sprite.svg#icon-logo-small'></use>
