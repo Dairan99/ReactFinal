@@ -14,7 +14,7 @@ import AboutAccount from './pages/AboutAccount';
 function App() {
 	return (
 		<>
-			<HashRouter basename="/ReactFinal" future={{
+			<HashRouter future={{
                     v7_startTransition: true,
                     v7_relativeSplatPath: true,
                 }}>
