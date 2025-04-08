@@ -2,7 +2,7 @@ import { QueryClientProvider } from '@tanstack/react-query';
 import Header from './components/Header';
 import { queryClient } from './utils/queryClient';
 import Footer from './components/Footer';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import Genres from './pages/Genres';
 import GenrePage from './pages/GenresPage';
@@ -14,7 +14,7 @@ import AboutAccount from './pages/AboutAccount';
 function App() {
 	return (
 		<>
-			<HashRouter basename="/ReactFinal" future={{
+			<BrowserRouter basename="/ReactFinal" future={{
                     v7_startTransition: true,
                     v7_relativeSplatPath: true,
                 }}>
@@ -33,7 +33,7 @@ function App() {
 					<Footer />
 					</QueryClientProvider>
 				</Provider>
-			</HashRouter>
+			</BrowserRouter>
 		</>
 	);
 }
