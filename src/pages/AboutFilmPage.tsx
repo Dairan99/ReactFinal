@@ -3,12 +3,13 @@ import { useParams } from "react-router-dom";
 import { validateResponse } from "../utils/validateResponse";
 import { useEffect, useState } from "react";
 import TrailerModal from "../components/TrailerModal";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../components/Header";
 import { addFavorites } from "../api/addFavorites";
 import { removeFavorites } from "../api/removeFavorites";
 import { IFavoritesData, receivingFavorites } from "../api/receivingFavorites";
 import { queryClient } from "../utils/queryClient";
+import { openAuthForm } from "../store/slices";
 
 interface IAboutFilm {
     id:number,
@@ -34,6 +35,7 @@ const AboutFilmPage = () => {
     const [trailerUrl, setTrailerUrl] = useState("")
     const [isFavorited, setIsFavorited] = useState(false)
     const {userName} = useSelector((state:RootState) => state.auth)
+    const dispatch = useDispatch()
 
     const {data, isLoading, error} = useQuery<IAboutFilm>({
         queryKey:["aboutFilm", movieId],
@@ -84,13 +86,17 @@ const AboutFilmPage = () => {
 	})
 
 	const toggleFavorite = () => {
-		if (userName && data) {
-			if (isFavorited) {
-				mutationRemove.mutate(data.id); 
-			} else {
-				mutationAdd.mutate(data.id); 
-			}
-		}
+        if (!userName) {
+            dispatch(openAuthForm())
+        } else {
+            if (userName && data) {
+                if (isFavorited) {
+                    mutationRemove.mutate(data.id); 
+                } else {
+                    mutationAdd.mutate(data.id); 
+                }
+            }
+        }
 	};
 
 
