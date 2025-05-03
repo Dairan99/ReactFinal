@@ -56,13 +56,13 @@ export const RegisterForm = ({setAuthType }: IRegister) => {
         })}>
             <button className="register-form__close" onClick={() => dispatch(closeAuthForm()) }>
                 <svg className="register-form__icon-cross" width="18" height="18" aria-hidden="true">
-				    <use xlinkHref="/public/sprite.svg#icon-cross-black"></use>
+				    <use xlinkHref="/ReactFinal/sprite.svg#icon-cross-black"></use>
 			    </svg>
             </button>
             <div className="register-form__content">
                 <div className="register-form__logo">
                     <svg className='register-form__icon-logo' width='24' height='32'aria-hidden='true'>
-                        <use xlinkHref='/public/sprite.svg#icon-logo'></use>
+                        <use xlinkHref='/ReactFinal/sprite.svg#icon-logo'></use>
                     </svg>
                     <span className="register-form__logo-name">маруся</span>
                 </div>
@@ -73,35 +73,35 @@ export const RegisterForm = ({setAuthType }: IRegister) => {
                         {errors.email && <span style={{color:"red"}}>{errors.email.message}</span>}
                         {serverError && <span style={{color:"red"}}>{serverError}</span>}
                         <svg className='register-form__icon' width='22' height='19'aria-hidden='true'>
-                            <use xlinkHref='/public/sprite.svg#icon-email'></use>
+                            <use xlinkHref='/ReactFinal/sprite.svg#icon-email'></use>
                         </svg>
                     </div>
                     <div className="register-form__input">
                         <input className="register-form__field" type="text" placeholder="Имя" {...register("name")}></input>
                         {errors.name && <span style={{color:"red"}}>{errors.name.message}</span>}
                         <svg className='register-form__icon' width='16' height='22'aria-hidden='true'>
-                            <use xlinkHref='/public/sprite.svg#icon-user'></use>
+                            <use xlinkHref='/ReactFinal/sprite.svg#icon-user'></use>
                         </svg>
                     </div>
                     <div className="register-form__input">
                         <input className="register-form__field" type="text" placeholder="Фамилия"{...register("surname")}></input>
                         {errors.surname && <span style={{color:"red"}}>{errors.surname.message}</span>}
                         <svg className='register-form__icon' width='16' height='22'aria-hidden='true'>
-                            <use xlinkHref='/public/sprite.svg#icon-user'></use>
+                            <use xlinkHref='/ReactFinal/sprite.svg#icon-user'></use>
                         </svg>
                     </div>
                     <div className="register-form__input">
                         <input className="register-form__field" type="password" placeholder="Пароль" {...register("password")}></input>
                         {errors.password && <span style={{color:"red"}}>{errors.password.message}</span>}
                         <svg className='register-form__icon' width='22' height='13'aria-hidden='true'>
-                            <use xlinkHref='/public/sprite.svg#icon-password'></use>
+                            <use xlinkHref='/ReactFinal/sprite.svg#icon-password'></use>
                         </svg>
                     </div>
                     <div className="register-form__input">
                         <input className="register-form__field" type="password" placeholder="Подтвердите пароль" {...register("confrimPassword")}></input>
                         {errors.confrimPassword && <span style={{color:"red"}}>{errors.confrimPassword.message}</span>}
                         <svg className='register-form__icon' width='22' height='13'aria-hidden='true'>
-                            <use xlinkHref='/public/sprite.svg#icon-password'></use>
+                            <use xlinkHref='/ReactFinal/sprite.svg#icon-password'></use>
                         </svg>
                     </div>
                 </div>

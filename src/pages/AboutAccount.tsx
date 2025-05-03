@@ -71,13 +71,13 @@ const AboutAccount = () => {
                     <div className="about-account__tabs">
                         <button className="about-account__text" type="button" onClick={() => setToggleFavorites(true)}>
                                 <svg className='about-account__icon' width='20' height='18' aria-hidden="true">
-									<use xlinkHref='/public/sprite.svg#icon-heart'></use>
+									<use xlinkHref='/ReactFinal/sprite.svg#icon-heart'></use>
 								</svg>
                             Избранные фильмы
                         </button>
                         <button className="about-account__text" type="button" onClick={() => setToggleFavorites(false)}>
                             <svg className='about-account__icon' width='16' height='22'aria-hidden='true'>
-                                <use xlinkHref='/public/sprite.svg#icon-user'></use>
+                                <use xlinkHref='/ReactFinal/sprite.svg#icon-user'></use>
                             </svg>
                             Настройка аккаунта
                         </button>
@@ -92,7 +92,7 @@ const AboutAccount = () => {
                                                         </Link>
                                                         <button className="about-account__favorites-delete" type="button" onClick={() => handleDelete(film.id)}>
                                                             <svg className='about-account__icon-cross' width='20' height='19'aria-hidden='true'>
-                                                                <use xlinkHref='/public/sprite.svg#icon-cross-black'></use>
+                                                                <use xlinkHref='/ReactFinal/sprite.svg#icon-cross-black'></use>
                                                             </svg>
                                                         </button>
                                                         </li>

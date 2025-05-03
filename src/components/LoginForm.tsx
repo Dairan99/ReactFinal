@@ -44,13 +44,13 @@ export const LoginForm = ({ setAuthType }: ILoginForm) => {
         })}>
                 <button className="auth-form__close" onClick={() => dispatch(closeAuthForm())}>
                     <svg className="auth-form__icon-cross" width="18" height="18" aria-hidden="true">
-                        <use xlinkHref="/public/sprite.svg#icon-cross-black"></use>
+                        <use xlinkHref="/ReactFinal/sprite.svg#icon-cross-black"></use>
                     </svg>
                 </button>
                 <div className="auth-form__content">
                     <div className="auth-form__logo">
                         <svg className='auth-form__icon-logo' width='24' height='32'aria-hidden='true'>
-                                <use xlinkHref='/public/sprite.svg#icon-logo'></use>
+                                <use xlinkHref='/ReactFinal/sprite.svg#icon-logo'></use>
                         </svg>
                         <span className="auth-form__logo-name">маруся</span>
                     </div>
@@ -59,14 +59,14 @@ export const LoginForm = ({ setAuthType }: ILoginForm) => {
                             <input className="auth-form__field" type="email" placeholder="Электронная почта" {...register("email")}></input>
                             {errors.email && <span style={{color:"red"}}>{errors.email.message}</span>}
                             <svg className='auth-form__icon' width='22' height='19'aria-hidden='true'>
-                                <use xlinkHref='/sprite.svg#icon-email'></use>
+                                <use xlinkHref='/ReactFinal/sprite.svg#icon-email'></use>
                             </svg>
                         </div>
                         <div className="auth-form__input">
                             <input className="auth-form__field" type="password" placeholder="Пароль" {...register("password")}></input>
                             {errors.password && <span style={{color:"red"}}>{errors.password.message}</span>}
                             <svg className='auth-form__icon' width='22' height='13'aria-hidden='true'>
-                                <use xlinkHref='/sprite.svg#icon-password'></use>
+                                <use xlinkHref='/ReactFinal/sprite.svg#icon-password'></use>
                             </svg>
                         </div>
                     </div>

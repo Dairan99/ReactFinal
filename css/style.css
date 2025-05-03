@@ -115,6 +115,11 @@ a {
     gap: 6px;
   }
 }
+@media (max-width: 500px) {
+  .header__wrapper {
+    padding: 0 15px 0 0;
+  }
+}
 @media (max-width: 767px) {
   .header__icon {
     display: none;
@@ -562,6 +567,11 @@ a {
   .about-film__button-description {
     padding: 16px 40px;
     max-width: 167px;
+  }
+}
+@media (max-width: 375px) {
+  .about-film__button-description {
+    padding: 13px;
   }
 }
 .about-film__button-description:hover {

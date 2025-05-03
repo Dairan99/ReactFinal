@@ -148,7 +148,7 @@ const AboutFilmPage = () => {
 						<div className='about-film__info'>
 							<div className='about-film__rating' style={{background:ratingColor}}>
 								<svg className='about-film__icon-star' width='16' height='16'>
-									<use xlinkHref='/public/sprite.svg#icon-star'></use>
+									<use xlinkHref='/ReactFinal/sprite.svg#icon-star'></use>
 								</svg>
 								<span className='about-film__count'>{data?.tmdbRating.toFixed(1)}</span>
 							</div>
@@ -163,9 +163,9 @@ const AboutFilmPage = () => {
 							<button className='about-film__button-favourites btn' onClick={toggleFavorite}>
 								<svg className='about-film__icon' width='20' height='20'>
                                 {isFavorited ?
-										(<use xlinkHref='/public/sprite.svg#icon-heart-purple'></use>) 
+										(<use xlinkHref='/ReactFinal/sprite.svg#icon-heart-purple'></use>) 
 										:
-										(<use xlinkHref='/public/sprite.svg#icon-heart'></use>)
+										(<use xlinkHref='/ReactFinal/sprite.svg#icon-heart'></use>)
 									}
 								</svg>
 							</button>
